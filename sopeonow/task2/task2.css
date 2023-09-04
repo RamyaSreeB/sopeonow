@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+/* navigation bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background-image: linear-gradient(
+    to right,
+    rgb(181, 46, 114),
+    rgba(227, 225, 176, 0.662)
+  );
+}
+.left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-nav .user-pic {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.right-nav .Resident {
+  margin-left: 6px;
+}
+.right-nav .Malaysia {
+  background-color: white;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 4px;
+}
+
+/* navigation bar end */
+
+/* content start */
+.content {
+  margin: 0 10%;
+}
+.content .first-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.content .second-line {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 8px 6px 10px #aaaaaa;
+}
+.card .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 6px;
+  padding: 8px;
+}
+.card .bottom {
+  background-color: rgb(225 188 160 / 58%);
+  padding: 10px;
+  border-radius: 10px;
+}
+/* content end */
+
+/* Admission  start*/
+.admission-journey {
+  background-color: #e2e9ecba;
+  padding: 0 10%;
+}
+
+.admission-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.ad-journey {
+  color: black;
+  font-size: 36px;
+}
+
+.admission-heading .elapsed-time {
+  margin: 0 24px;
+}
+
+.admission-heading .given-time {
+  font-weight: bolder;
+  background-color: white;
+  padding: 4px;
+  border-radius: 4px;
+  color: purple; 
+}
+.line {
+  height: 600px;
+  width: 2px;
+  background-color: grey;
+  position: absolute;
+  left: 135px;
+  z-index: 1;
+}
+.admission {
+  margin-top: 40px;
+  position: relative;
+}
+.admission .each-label {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.each-label .circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(22, 190, 22);
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left:10px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.each-label .circle ion-icon {
+  color: white;
+  font-size: 32px;
+}
+.each-label .circle-content {
+  font-size: 22px;
+}
+
+.time-difference {
+  font-size: 24px;
+  padding: 20px 12px;
+}
+
+@media screen and (max-width:620px){
+  .card{
+    width:150px;
+    box-shadow: 4px 3px 5px #aaaaaa;
+  }
+  .second-line .card .top{
+    margin:6px;
+    padding:8px;
+  }
+  .second-line .card .botton{
+    padding:10px;
+    margin:3px;
+  }
+  .each-label .circle ion-icon {
+    color: white;
+    font-size: 20px;
+  }
+  .each-label .circle-content {
+      font-size: 16px;
+  }
+    .each-label .circle {
+      width: 35px;
+      height: 35px;
+      z-index:2;
+      margin-left:16px;
+    }
+    .time-difference{
+      font-size:16px;
+    }
+    .ad-journey{
+      font-size:28px
+    }
+    .line{
+      height:520px;
+    }
+}
+@media screen and (max-width:310px){
+  .user-data{
+    font-size:14px
+  }
+  .card {
+      width: 80px;
+      font-size:10px;
+      font-weight:550;
+      box-shadow: 2px 1.5px 2.5px #aaaaaa;
+    }
+  .second-line .card .top {
+      margin: 3px;
+      padding: 4px;
+    }
+    .second-line .card .botton {
+      padding: 5px;
+      margin: 1.5px;
+    }
+    .first-line .card .top{
+      margin: 3px;
+      padding: 4px;
+    }
+    .each-label .circle ion-icon {
+           color: white;
+           font-size: 14px;
+      }
+    
+         .each-label .circle-content {
+           font-size: 14px;
+         }
+    
+         .each-label .circle {
+           width: 14px;
+           height: 20px;
+           z-index:1;
+           margin-left: 22px;
+         }
+    
+         .time-difference {
+           font-size: 14px;
+         }
+    
+         .ad-journey {
+           font-size: 16px;
+           font-weight: bold;
+         }
+         .time{
+          font-size:14px;
+         }
+         .admission-heading .given-time {
+          margin-left:80px;
+         }
+         .admission-heading .elapsed-time{
+          margin-left:60px;
+         }
+         .line{
+          height:500px;
+         }
+
+
+}
+
+/* Admission End */

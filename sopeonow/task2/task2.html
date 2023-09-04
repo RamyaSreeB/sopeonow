@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="task2.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Task 2</title>
+  </head>
+  <body>
+    <!-- navigation bar start -->
+    <nav>
+      <div class="left-nav">
+        <div class="user-pic"></div>
+        <div class="user-data">
+          <b>ETHAN WONG</b><br />
+          Male , 60 yrs  (Senior Citizen)
+        </div>
+      </div>
+      <div class="right-nav">
+        <span class="Resident">Resident</span>
+        <span class="Malaysia">Malaysia</span>
+      </div>
+    </nav>
+    <!-- navigation bar end -->
+
+    <!-- content start -->
+    <section class="content">
+      <div class="first-line">
+        <!-- card -->
+        <div class="card">
+          <div class="top">
+            <span class="patient-id">PatientID </span>
+            <ion-icon name="bed-outline"></ion-icon>
+          </div>
+          <div class="bottom">5321344</div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <div class="top">
+            <span class="visit-id">Visit ID </span>
+            <ion-icon name="bed-outline"></ion-icon>
+          </div>
+          <div class="bottom">2735678</div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <div class="top">
+            <span class="ward">Ward</span>
+            <ion-icon name="bed-outline"></ion-icon>
+          </div>
+          <div class="bottom">Ward 2A</div>
+        </div>
+      </div>
+      <div class="second-line">
+        <!-- card -->
+        <div class="card">
+          <div class="top">
+            <span class="bed">Bed(F5-102)</span>
+            <ion-icon name="bed-outline"></ion-icon>
+          </div>
+          <div class="bottom">Single Bed</div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <div class="top">
+            <span class="payor">Payor</span>
+            <ion-icon name="bed-outline"></ion-icon>
+          </div>
+          <div class="bottom">AIA BHD </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- content end -->
+
+    <!-- admission journey start -->
+    <section class="admission-journey">
+      <!-- heading start.... -->
+      <div class="admission-heading">
+        <span class="ad-journey">Admission Journey</span>
+        <div class="time">
+          <span class="elapsed-time">Elapsed Time</span>
+          <span class="given-time">02:45</span>
+        </div>
+      </div>
+
+      <!-- heading end.... -->
+
+      <!-- All Rounds -->
+      <section class="admission">
+        <div class="line"></div>
+        <!-- Label  -->
+        <div class="each-label">
+          <div class="circle">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+          <div class="circle-content">
+            <b>Admission Request</b> Dec 06 2021 08:36 AM
+            <br />
+            Ratha AP
+          </div>
+        </div>
+
+        <!-- Time Difference -->
+        <div class="time-difference">00:24</div>
+
+        <!-- Label  -->
+        <div class="each-label">
+          <div class="circle">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+          <div class="circle-content">
+            <b>Sent for IGL Approval </b>Dec 06 2021 09:00 AM
+            <br />
+            Jim Chin
+          </div>
+        </div>
+
+        <!-- Time Difference -->
+        <div class="time-difference">02:23</div>
+
+        <!-- Label  -->
+        <div class="each-label">
+          <div class="circle">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+          <div class="circle-content">
+            <b>Received IGL Approval </b>Dec 06 2021 11:23 AM
+            <br />
+            Jim Chin
+          </div>
+        </div>
+        <!-- Time Difference -->
+        <div class="time-difference">00:15</div>
+
+        <!-- Label  -->
+        <div class="each-label">
+          <div class="circle">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </div>
+          <div class="circle-content">
+            <b>Requested Bed Confirmation </b>Dec 06 2021 11:38 AM
+            <br />
+            Jim Chin
+          </div>
+        </div>
+
+        <!-- Time Difference -->
+        <div class="time-difference"></div>
+
+        <!-- Label  -->
+        <div class="each-label">
+          <div class="circle"><ion-icon name="bed-outline"></ion-icon></div>
+          <div class="circle-content">
+            <b>Admitted</b>
+          </div>
+        </div>
+
+        <!-- Time Difference -->
+        <div class="time-difference"></div>
+
+        <!-- Label  -->
+        <div class="each-label">
+          <div class="circle">
+            <ion-icon name="bed-outline"></ion-icon>
+          </div>
+          <div class="circle-content">
+            <b>Accepted</b>
+          </div>
+        </div>
+
+        <!-- Time Difference -->
+        <div class="time-difference"></div>
+      </section>
+    </section>
+    <!-- admission journey ends -->
+  </body>
+</html>
